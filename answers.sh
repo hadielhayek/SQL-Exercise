@@ -19,3 +19,32 @@ WHERE ID=2;
 7.UPDATE students
 SET Name='Alex', Points='150'
 WHERE ID=1;
+
+2.CREATE TABLE Persons (
+   ID Integer Not Null Primary key AUTOINCREMENT
+   Name Text Not Null Unique
+   Age Integer
+   Gender Text
+ Points Integer
+ Graduation date DD/MM/YY
+);
+
+UPDATE graduates
+SET Name='Layal', Points='150',Graduation="08/09/2018"
+WHERE ID=1;
+
+DELETE FROM students
+where id=4
+
+SELECT employees.Name, employees.Company, companies.date FROM companies
+INNER JOIN employees
+
+SELECT employees.Name FROM employees
+INNER JOIN companies ON employees.Company=companies.Name
+where date<2000
+
+SELECT Company FROM employees
+WHERE Role="Graphic Designer"
+
+
+
